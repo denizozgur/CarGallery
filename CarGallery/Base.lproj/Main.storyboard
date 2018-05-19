@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="eNw-HR-e9g">
+    <device id="retina5_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Cars-->
+        <scene sceneID="nYE-Ji-k9G">
+            <objects>
+                <tableViewController id="Zu7-eG-Ue8" customClass="CarGalleryTableViewController" customModule="CarGallery" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="140" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="whf-tP-F4i">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.039215686274509803" green="0.039215686274509803" blue="0.039215686274509803" alpha="1" colorSpace="calibratedRGB"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="gray" indentationWidth="10" reuseIdentifier="customCell" rowHeight="140" id="Y5F-qm-f9S" customClass="CustomCell" customModule="CarGallery" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="375" height="140"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Y5F-qm-f9S" id="QJQ-jC-Hhx">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="140"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView autoresizesSubviews="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="250" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="YRK-4M-ebb">
+                                            <rect key="frame" x="16" y="11" width="120" height="118"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="120" id="ITA-LO-G9o"/>
+                                                <constraint firstAttribute="height" constant="118" id="Ig7-K0-Geq"/>
+                                            </constraints>
+                                        </imageView>
+                                        <label autoresizesSubviews="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="2" minimumScaleFactor="0.84999999999999998" translatesAutoresizingMaskIntoConstraints="NO" id="EgM-MY-XW4">
+                                            <rect key="frame" x="144" y="11" width="215" height="118"/>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="160" id="2mg-dt-FNO"/>
+                                                <constraint firstAttribute="height" constant="118" id="ei0-yE-cHa"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="23"/>
+                                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <nil key="highlightedColor"/>
+                                            <size key="shadowOffset" width="0.0" height="-2"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="EgM-MY-XW4" firstAttribute="top" secondItem="YRK-4M-ebb" secondAttribute="top" id="0ht-J5-pHr"/>
+                                        <constraint firstItem="YRK-4M-ebb" firstAttribute="leading" secondItem="QJQ-jC-Hhx" secondAttribute="leadingMargin" id="41D-mL-XQX"/>
+                                        <constraint firstItem="EgM-MY-XW4" firstAttribute="leading" secondItem="YRK-4M-ebb" secondAttribute="trailing" constant="8" symbolic="YES" id="4IR-Ox-AOn"/>
+                                        <constraint firstItem="EgM-MY-XW4" firstAttribute="bottom" secondItem="QJQ-jC-Hhx" secondAttribute="bottomMargin" id="5iJ-QS-smf"/>
+                                        <constraint firstItem="EgM-MY-XW4" firstAttribute="bottom" secondItem="YRK-4M-ebb" secondAttribute="bottom" id="LhV-s5-SnC"/>
+                                        <constraint firstItem="YRK-4M-ebb" firstAttribute="top" secondItem="QJQ-jC-Hhx" secondAttribute="topMargin" id="T5t-06-WsY"/>
+                                        <constraint firstItem="EgM-MY-XW4" firstAttribute="trailing" secondItem="QJQ-jC-Hhx" secondAttribute="trailingMargin" id="cmo-cv-SVK"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <color key="backgroundColor" red="0.039215686274509803" green="0.039215686274509803" blue="0.039215686274509803" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <connections>
+                                    <outlet property="cellImage" destination="YRK-4M-ebb" id="Ovk-8t-mxn"/>
+                                    <outlet property="cellLabel" destination="EgM-MY-XW4" id="oFC-oD-Rbm"/>
+                                    <segue destination="BYZ-38-t0r" kind="showDetail" identifier="showCarDetail" id="xjt-rs-RNq"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="Zu7-eG-Ue8" id="lwd-6l-6qp"/>
+                            <outlet property="delegate" destination="Zu7-eG-Ue8" id="Cbh-Ut-dao"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Cars" id="GkG-iR-NBN"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="U6u-9T-mQI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2112" y="-2045"/>
+        </scene>
+        <!--Split View Controller-->
+        <scene sceneID="zwy-HM-Vct">
+            <objects>
+                <splitViewController id="eNw-HR-e9g" sceneMemberID="viewController">
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="detailViewController" id="wD1-8m-wz0"/>
+                        <segue destination="NXm-Jp-aUX" kind="relationship" relationship="masterViewController" id="xXJ-ek-cty"/>
+                    </connections>
+                </splitViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bq4-8W-Ho7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-3831" y="-2045"/>
+        </scene>
+        <!--Car View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="CarViewController" customModule="CarGallery" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView opaque="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" insetsLayoutMarginsFromSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fmo-Vw-aMz">
+                                <rect key="frame" x="16" y="88" width="343" height="592"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <gestureRecognizers/>
+                            </imageView>
+                            <label clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="250" verticalCompressionResistancePriority="250" text="Specs" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HE7-Jh-smv">
+                                <rect key="frame" x="16" y="688" width="343" height="90"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="90" id="qK5-Zb-qvh"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="highlightedColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="Fmo-Vw-aMz" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="Dk6-9w-c6j"/>
+                            <constraint firstItem="Fmo-Vw-aMz" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="LdW-DD-wtZ"/>
+                            <constraint firstItem="HE7-Jh-smv" firstAttribute="leading" secondItem="Fmo-Vw-aMz" secondAttribute="leading" id="XfZ-GT-Wwc"/>
+                            <constraint firstItem="Fmo-Vw-aMz" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="YxN-0x-fMs"/>
+                            <constraint firstItem="HE7-Jh-smv" firstAttribute="trailing" secondItem="Fmo-Vw-aMz" secondAttribute="trailing" id="ZUV-C8-skJ"/>
+                            <constraint firstItem="HE7-Jh-smv" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="dXw-Vm-95V"/>
+                            <constraint firstItem="HE7-Jh-smv" firstAttribute="top" secondItem="Fmo-Vw-aMz" secondAttribute="bottom" constant="8" symbolic="YES" id="nQC-Yg-3kp"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="MKg-Tz-Hqn"/>
+                    <connections>
+                        <outlet property="carImageView" destination="Fmo-Vw-aMz" id="eh5-ZV-7Rz"/>
+                        <outlet property="carSpecsLabel" destination="HE7-Jh-smv" id="Xgk-8E-9Ca"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-3245.5999999999999" y="-1086.9458128078818"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="The-l9-rfJ">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="NXm-Jp-aUX" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" barStyle="black" id="kGJ-Wk-QdI">
+                        <rect key="frame" x="0.0" y="44" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Zu7-eG-Ue8" kind="relationship" relationship="rootViewController" id="xK9-Ms-vdY"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uA9-LO-KgW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-3011" y="-2045"/>
+        </scene>
+    </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="xjt-rs-RNq"/>
+    </inferredMetricsTieBreakers>
+</document>

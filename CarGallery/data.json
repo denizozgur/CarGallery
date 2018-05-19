@@ -1,0 +1,16 @@
+{
+    "ALFA": {
+        "MSRP": 73700,
+        "Horsepower": 505,
+        "MPG": 29,
+        "Engine": 2.9,
+        "Torque": 443
+    },
+    "BMW": {
+        "MSRP": 68700,
+        "Horsepower": 444,
+        "Curb weight": 3530,
+        "MPG": 19,
+        "Torque": 406
+    }
+}
