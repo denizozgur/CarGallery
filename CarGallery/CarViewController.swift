@@ -16,6 +16,7 @@ class CarViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
         carImageView.image = carToBeViewed?.getCarImage
         carSpecsLabel.text = carToBeViewed?.getSpecs
+        self.title = carToBeViewed?.getModelName
     }
     
     override func didReceiveMemoryWarning() {
